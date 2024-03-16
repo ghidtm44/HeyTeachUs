@@ -9,9 +9,16 @@
   }
   
   header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     background-color: #ffffff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
+  }
+  
+  .logo img {
+    height: 50px; /* Adjust the height as needed */
   }
   
   nav ul {
@@ -52,11 +59,13 @@
   .hero-content h1 {
     font-size: 48px;
     margin-bottom: 20px;
+    color: #ffffff;
   }
   
   .hero-content p {
     font-size: 24px;
     margin-bottom: 40px;
+    color: #ffffff;
   }
   
   .cta-button {
