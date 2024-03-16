@@ -37,9 +37,16 @@
   }
   
   nav ul li a {
-    text-decoration: none;
     color: var(--secondary-color);
-    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: #fff;
+    border-radius: 5px;
   }
   
   .cta-button {
@@ -142,7 +149,7 @@
     text-decoration: none;
     color: var(--secondary-color);
   }
-
+  
   #registration {
     padding: 80px 0;
   }
@@ -197,10 +204,8 @@
   button[type="submit"]:hover {
     background-color: #0056b3;
   }
-
-  /* ... previous CSS styles ... */
-
-#how-it-works {
+  
+  #how-it-works {
     padding: 80px 0;
   }
   
@@ -244,10 +249,8 @@
   .step:nth-child(even) .step-content {
     order: 1;
   }
-
-  /* ... previous CSS styles ... */
-
-#about-us {
+  
+  #about-us {
     padding: 80px 0;
   }
   
@@ -297,10 +300,8 @@
   .about-content:nth-child(even) .about-image {
     order: 1;
   }
-
-  /* ... previous CSS styles ... */
-
-#login {
+  
+  #login {
     padding: 80px 0;
   }
   
