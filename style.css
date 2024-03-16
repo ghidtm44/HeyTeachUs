@@ -69,13 +69,13 @@
   }
   
   .cta-button {
-    background-color: var(--primary-color);
-    border-radius: 4px;
-    color: #ffffff;
-    display: inline-block;
-    font-size: 20px;
-    padding: 12px 24px;
-    text-decoration: none;
+	background-color: #FFFFFF;
+	border-radius: 4px;
+	color: #000000;
+	display: inline-block;
+	font-size: 20px;
+	padding: 12px 24px;
+	text-decoration: none;
   }
   
   footer {
