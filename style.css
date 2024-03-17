@@ -26,27 +26,65 @@
     height: 40px;
   }
   
-  nav ul {
+  .desktop-menu {
     list-style: none;
     display: flex;
     align-items: center;
   }
   
-  nav ul li {
+  .desktop-menu li {
     margin-left: 20px;
   }
   
-  nav ul li a {
+  .desktop-menu li a {
     color: var(--secondary-color);
     text-decoration: none;
     padding: 10px;
     transition: background-color 0.3s ease, color 0.3s ease;
   }
   
-  nav ul li a:hover {
+  .desktop-menu li a:hover {
     background-color: var(--primary-color);
     color: #fff;
     border-radius: 5px;
+  }
+  
+  .hamburger-menu {
+    display: none;
+  }
+  
+  .menu-icon {
+    cursor: pointer;
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 10px;
+    color: var(--secondary-color);
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-items {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .menu-items li {
+    padding: 10px;
+  }
+  
+  .menu-items li a {
+    color: var(--secondary-color);
+    text-decoration: none;
   }
   
   .cta-button {
@@ -372,106 +410,61 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
-
-  /* ... previous CSS styles ... */
-
-@media (max-width: 768px) {
+  
+  @media (max-width: 768px) {
     header {
       padding: 10px;
+      justify-content: space-between;
     }
-    
-    nav ul {
-      display: none;
-    }
-    
+  
     .logo img {
       height: 30px;
     }
-    
+  
+    .desktop-menu {
+      display: none;
+    }
+  
+    .hamburger-menu {
+      display: block;
+    }
+  
+    #menu-toggle:checked ~ .menu-items {
+      display: block;
+    }
+  
     .container {
       padding: 0 10px;
     }
-    
+  
     .step {
       flex-direction: column;
       margin-bottom: 40px;
     }
-    
+  
     .step-image,
     .step-content {
       flex: auto;
       padding: 0;
     }
-    
+  
     .about-content {
       flex-direction: column;
       margin-bottom: 20px;
     }
-    
+  
     .about-text,
     .about-image {
       padding: 0;
     }
-    
+  
     .login-content {
       flex-direction: column;
     }
-    
+  
     .login-form,
     .login-image {
       padding: 0;
       margin-bottom: 20px;
-    }
-  }
-
-  .hamburger-menu {
-    display: none;
-  }
-  
-  .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    font-size: 24px;
-    margin-right: 10px;
-    color: var(--secondary-color);
-  }
-  
-  #menu-toggle {
-    display: none;
-  }
-  
-  .menu-items {
-    display: none;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  }
-  
-  .menu-items li {
-    padding: 10px;
-  }
-  
-  .menu-items li a {
-    color: var(--secondary-color);
-    text-decoration: none;
-  }
-  
-  @media (max-width: 768px) {
-    .hamburger-menu {
-      display: block;
-    }
-  
-    nav ul {
-      display: none;
-    }
-  
-    #menu-toggle:checked ~ .menu-items {
-      display: block;
     }
   }
