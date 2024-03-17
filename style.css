@@ -68,18 +68,26 @@
   .menu-items {
     display: none;
     list-style: none;
-    padding: 0;
+    padding: 20px;
     margin: 0;
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    right: 0;
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: opacity 0.3s ease;
+    opacity: 0;
+    pointer-events: none;
+  }
+  
+  #menu-toggle:checked ~ .menu-items {
+    display: block;
+    opacity: 1;
+    pointer-events: auto;
   }
   
   .menu-items li {
-    padding: 10px;
+    margin-bottom: 10px;
   }
   
   .menu-items li a {
@@ -427,10 +435,7 @@
   
     .hamburger-menu {
       display: block;
-    }
-  
-    #menu-toggle:checked ~ .menu-items {
-      display: block;
+      position: relative;
     }
   
     .container {
