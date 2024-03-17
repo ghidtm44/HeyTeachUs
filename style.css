@@ -105,6 +105,14 @@
     font-weight: bold;
   }
   
+  .desktop-menu .cta-button {
+    color: #fff;
+  }
+  
+  .menu-items .cta-button {
+    color: #fff;
+  }
+
   #hero {
     background-color: #f8f9fa;
     padding: 100px 0;
