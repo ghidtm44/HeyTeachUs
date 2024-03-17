@@ -372,3 +372,54 @@
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   }
+
+  /* ... previous CSS styles ... */
+
+@media (max-width: 768px) {
+    header {
+      padding: 10px;
+    }
+    
+    nav ul {
+      display: none;
+    }
+    
+    .logo img {
+      height: 30px;
+    }
+    
+    .container {
+      padding: 0 10px;
+    }
+    
+    .step {
+      flex-direction: column;
+      margin-bottom: 40px;
+    }
+    
+    .step-image,
+    .step-content {
+      flex: auto;
+      padding: 0;
+    }
+    
+    .about-content {
+      flex-direction: column;
+      margin-bottom: 20px;
+    }
+    
+    .about-text,
+    .about-image {
+      padding: 0;
+    }
+    
+    .login-content {
+      flex-direction: column;
+    }
+    
+    .login-form,
+    .login-image {
+      padding: 0;
+      margin-bottom: 20px;
+    }
+  }
