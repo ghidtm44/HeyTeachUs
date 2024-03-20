@@ -28,9 +28,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     .then(function(response) {
       if (response.ok) {
         // Registration successful
-        alert('Registration successful!');
-        // Reset the form
-        document.getElementById('registrationForm').reset();
+        window.location.href = 'confirmation.html'; // Redirect to the confirmation page
       } else {
         // Registration failed
         alert('Registration failed. Please try again.');
