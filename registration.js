@@ -18,7 +18,7 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     };
   
     // Make an HTTP POST request to your AWS Lambda function
-    fetch('https://yvrz6ibugm5eb7yivyqbufgnzy0fmewo.lambda-url.us-east-1.on.aws/', {
+    fetch('https://2j6gaiqau7.execute-api.us-east-1.amazonaws.com/Prod', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
